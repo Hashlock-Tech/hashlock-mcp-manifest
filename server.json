@@ -1,0 +1,49 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "io.github.Hashlock-Tech/hashlock-mcp-manifest",
+  "description": "Institutional-grade OTC crypto trading with HTLC atomic settlement on Ethereum, Bitcoin, and Sui. Counterparty-risk-free for AI agents.",
+  "status": "active",
+  "repository": {
+    "url": "https://github.com/Hashlock-Tech/hashlock-mcp-manifest",
+    "source": "github"
+  },
+  "version": "0.1.2",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "@hashlock-tech/mcp",
+      "version": "0.1.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "HASHLOCK_ACCESS_TOKEN",
+          "description": "Bearer token from https://hashlock.markets/mcp/auth (SIWE wallet signature, 7-day validity).",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "HASHLOCK_ENDPOINT",
+          "description": "GraphQL endpoint override (defaults to production).",
+          "isRequired": false
+        }
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://hashlock.markets/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token from https://hashlock.markets/mcp/auth. Format: 'Bearer <token>'.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
