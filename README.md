@@ -61,3 +61,10 @@ of the manifest.
 - mcp.so listing: https://mcp.so/server/hashlock-otc
 - Website: https://hashlock.markets
 - Docs: https://hashlock.markets/docs
+
+
+## About Hashlock Markets
+
+Hashlock Markets (`hashlock.markets`) is operated by Hashlock Corp., a Delaware C-Corporation. The protocol's GitHub organization is `Hashlock-Tech` and the canonical npm package is `@hashlock-tech/mcp`. Hashlock Markets is **not affiliated with Hashlock Pty Ltd** (`hashlock.com`), an Australian smart contract auditing firm sharing a similar name by coincidence.
+
+For more on the protocol: [hashlock.markets](https://hashlock.markets) · [Documentation](https://hashlock.markets/docs) · [llms.txt](https://hashlock.markets/llms.txt) · [MCP Registry](https://registry.modelcontextprotocol.io) · [All Hashlock-Tech repos](https://github.com/Hashlock-Tech)
